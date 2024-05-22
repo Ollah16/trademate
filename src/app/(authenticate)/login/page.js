@@ -21,9 +21,9 @@ const AuthenticatePage = () => {
     return (
         <div className={`${styles.main} flex items-center justify-center`}>
             <div className='rounded-xl border-2 md:w-8/12 w-10/12 md:p-10 p-2 lg:w-[510px]'>
-                <div className='md:px-5 px-2'>
+                <div className='md:px-5 px-2 my-5'>
 
-                    <h3 className='my-5 text-xl text-center font-semibold md:text-2xl'>Login to ProExchange</h3>
+                    <h3 className='mb-5 text-xl text-center font-semibold md:text-2xl'>Login to ProExchange</h3>
 
                     <div className='flex flex-col gap-5'>
                         <span className='relative flex items-center'>
