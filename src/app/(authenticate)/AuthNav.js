@@ -1,8 +1,8 @@
 'use client'
 import React from 'react'
 import { NavBrand } from '../components/navbar/navbrand'
-import Anylogin from './signup/anylogin'
-import LoginLink from './signup/loginlink'
+import Anylogin from './signup/logintype'
+import LoginLink from './signup/loginlinktag'
 import { useSelector } from 'react-redux'
 
 

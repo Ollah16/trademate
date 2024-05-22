@@ -1,9 +1,9 @@
 'use client'
 
-import TypeCheck from './typecheck'
+import TypeCheck from './usertypeselect'
 import styles from '../authenticate.module.css'
 import AuthForm from './authForm'
-import LoginAlt from './loginalt'
+import LoginAlt from './loginalternative'
 import { useDispatch, useSelector } from 'react-redux'
 import { selectUserType } from '@/app/reduxtoolkit/userSlice'
 

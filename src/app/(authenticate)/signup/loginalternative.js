@@ -1,5 +1,5 @@
 import Link from "next/link"
-import LoginLink from "./loginlink"
+import LoginLink from "./loginlinktag"
 
 const LoginAlt = () => {
     return (
