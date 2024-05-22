@@ -82,7 +82,9 @@ const AuthInputs = () => {
                 <LoginAlt />
             </div>
 
-            <Anylogin />
+            <div className="md:hidden block">
+                <Anylogin />
+            </div>
 
         </div>
     )

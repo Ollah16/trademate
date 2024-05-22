@@ -1,4 +1,3 @@
-import Link from "next/link"
 import LoginLink from "./loginlinktag"
 
 const LoginAlt = () => {
