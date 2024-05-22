@@ -30,7 +30,7 @@ const TypeCheck = () => {
                         </span>
                     </div>
 
-                    <div className="w-full flex justify-end">
+                    <div className="w-full flex">
                         <span className="text-xl font-semibold text-start">{user.description}</span>
                     </div>
                 </button>
