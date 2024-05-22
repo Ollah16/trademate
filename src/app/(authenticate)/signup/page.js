@@ -21,7 +21,7 @@ const RegisterPage = () => {
 
             <div className="flex flex-col items-center justify-between h-fit py-5 px-4 bg-white rounded-lg gap-5">
 
-                <h3 className="text-3xl font-semibold text-center">Join as a client or contractor</h3>
+                <h3 className="md:text-3xl text-2xl font-semibold text-center">Join as a client or contractor</h3>
                 <TypeCheck />
 
                 <button

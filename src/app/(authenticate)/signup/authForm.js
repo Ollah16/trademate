@@ -1,6 +1,7 @@
 import { useSelector } from "react-redux";
 import ThirdParty from "./thirdpartyauth";
 import AuthInputs from "./authinputs";
+import PseudoOr from "./pseudoOr";
 
 const AuthForm = () => {
 
@@ -10,13 +11,11 @@ const AuthForm = () => {
 
     return (
         <div className={`flex-col gap-5 items-center md:w-8/12 lg:w-6/12 xl:w-5/12 w-full sm:w-10/12 px-4 mx-auto my-10 justify-center ${isUserTypeClicked ? 'flex' : 'hidden'}`}>
-            <h4 className="font-semibold text-3xl text-center my-3">{signupIntro}</h4>
+            <h4 className="font-semibold md:text-3xl text-2xl text-center my-3">{signupIntro}</h4>
 
             <ThirdParty />
 
-            <span className={`flex items-center justify-center gap-2 w-full px-3
-            before:inline-block before:content-[''] before:w-6/12 before:bg-black/20 before:h-[.5px] 
-            after:inline-block after:content-[''] after:w-6/12 after:bg-black/20 after:h-[.5px]`}>or</span>
+            <PseudoOr />
             <AuthInputs />
         </div>
     )
