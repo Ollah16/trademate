@@ -12,11 +12,11 @@ const TypeCheck = () => {
     ]
 
     return (
-        <div className="flex justify-between gap-5 w-10/12">
+        <div className="flex justify-between md:flex-row flex-col w-full gap-5 md:w-10/12">
             {userTypes.map((user, index) => (
                 <button key={index} onClick={() => dispatch(changeUserType(user.title))}
                     className={`active:scale-95 transition-transform duration-150 ease-in-out
-                bg-gray-100/30 border-2 ${userType === user.title && 'border-green-600'} rounded-md w-6/12 flex flex-col gap-5 h-40 py-4 pr-3 pl-5
+                bg-gray-100/30 border-2 ${userType === user.title && 'border-green-600'} rounded-md md:w-6/12 w-full flex flex-col gap-5 h-40 py-4 pr-3 pl-5
                  border-black/20 hover:border-green-600 transition-colors duration-150`}>
                     <div className="flex justify-between w-full">
                         <span>

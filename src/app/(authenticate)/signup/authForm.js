@@ -6,6 +6,7 @@ import { FcGoogle } from "react-icons/fc";
 import Link from "next/link";
 import LoginAlt from "./loginalt";
 import { useSelector } from "react-redux";
+import Anylogin from "./anylogin";
 
 const AuthForm = () => {
 
@@ -17,16 +18,16 @@ const AuthForm = () => {
     const helpfulEmails = userType === 'client' ? 'Send me emails with tips on how to find talent that fits my needs.' : 'Send me helpful emails to find rewarding work and job leads.'
 
     return (
-        <div className={`flex-col gap-5 items-center w-4/12 mx-auto my-10 justify-center ${isUserTypeClicked ? 'flex' : 'hidden'}`}>
-            <h4 className="font-semibold text-3xl my-3">{signupIntro}</h4>
+        <div className={`flex-col gap-5 items-center md:w-8/12 lg:w-6/12 xl:w-5/12 w-full sm:w-10/12 px-4 mx-auto my-10 justify-center ${isUserTypeClicked ? 'flex' : 'hidden'}`}>
+            <h4 className="font-semibold text-3xl text-center my-3">{signupIntro}</h4>
 
-            <div className="flex gap-5 w-full">
-                <button className="rounded-3xl border h-fit w-6/12 flex items-center gap-5">
+            <div className="flex gap-5 w-full md:flex-row flex-col">
+                <button className="rounded-3xl border border-black/70 h-fit md:w-6/12 w-full flex items-center gap-5">
                     <span className="rounded-full bg-white block p-2"> <SiApple className="text-2xl" /></span>
                     <span className="text-sm"> Continue with Apple</span>
                 </button>
 
-                <button className="rounded-3xl border h-fit w-6/12 flex items-center gap-5 bg-blue-500">
+                <button className="rounded-3xl border h-fit md:w-6/12 w-full flex items-center gap-5 bg-blue-500">
                     <span className="rounded-full bg-white block p-2"><FcGoogle className="text-2xl" /></span>
                     <span className="text-sm text-white"> Continue with Google</span>
                 </button>
@@ -83,14 +84,14 @@ const AuthForm = () => {
                 </span>
 
                 <span className="flex flex-col gap-2 py-2">
-                    <p className="flex gap-4 items-center text-md">
+                    <p className="flex gap-4 items-center md:text-base text-xs">
                         <span>
                             <input type="checkbox" className="inline-block h-5 w-5" />
                         </span>
                         <span>{helpfulEmails}</span>
                     </p>
 
-                    <p className="flex gap-4 items-center text-md">
+                    <p className="flex gap-4 items-center md:text-base text-xs">
                         <span>
                             <input type="checkbox" className="inline-block h-5 w-5" />
                         </span>
@@ -100,7 +101,11 @@ const AuthForm = () => {
 
                 <button className="bg-green-700 px-4 block py-2 rounded-3xl text-white font-semibold hover:bg-green-600 transition-colors duration-200 ease-in-out mt-5">Create my profile</button>
 
-                <LoginAlt />
+                <div className="md:block hidden">
+                    <LoginAlt />
+                </div>
+
+                <Anylogin />
 
             </div>
         </div>
