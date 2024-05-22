@@ -1,0 +1,22 @@
+.rotateHrFor {
+    transform: rotate(-135deg);
+    position: absolute;
+    top: auto;
+    bottom: auto;
+    right: 0;
+}
+
+.rotateHrOpp {
+    transform: rotate(-225deg);
+    position: absolute;
+    top: auto;
+    bottom: auto;
+    right: 0;
+}
+
+.adjustOpacity {
+    opacity: 0;
+    top: auto;
+    bottom: auto;
+    right: 0;
+}
