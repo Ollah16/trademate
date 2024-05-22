@@ -8,15 +8,20 @@ import Link from 'next/link';
 import { CiUser } from "react-icons/ci";
 import { useEffect } from 'react';
 import { useDispatch } from 'react-redux';
-import { selectUserType } from '@/app/reduxtoolkit/userSlice';
+import { changeUserType, selectUserType } from '@/app/reduxtoolkit/userSlice';
 
 const AuthenticatePage = () => {
 
     const dispatch = useDispatch()
 
     useEffect(() => {
-        dispatch(selectUserType(false))
+        handleSwitchReset()
     }, [])
+
+    const handleSwitchReset = () => {
+        dispatch(selectUserType(false))
+        dispatch(changeUserType(''))
+    }
 
     return (
         <div className={`${styles.main} flex items-center justify-center`}>

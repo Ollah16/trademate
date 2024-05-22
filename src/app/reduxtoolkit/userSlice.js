@@ -10,7 +10,6 @@ const userSlice = createSlice({
     reducers: {
         authenticateUser(state) {
             state.isLoggedIn = !state.isLoggedIn
-            console.log(state.isLoggedIn)
         },
 
         changeUsername(state) {
@@ -22,10 +21,8 @@ const userSlice = createSlice({
         },
 
         selectUserType(state, action) {
-            console.log('hi')
             state.isUserTypeClicked = action.payload
         }
-
 
     }
 })

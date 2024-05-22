@@ -6,7 +6,6 @@ const navSlice = createSlice({
     reducers: {
         handleExpandNav(state) {
             state.isNavExpanded = !state.isNavExpanded
-            console.log(state.isNavExpanded)
         }
     }
 })
