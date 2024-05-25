@@ -9,6 +9,7 @@ import { CiUser } from "react-icons/ci";
 import { useEffect } from 'react';
 import { useDispatch } from 'react-redux';
 import { changeUserType, selectUserType } from '@/app/reduxtoolkit/userSlice';
+import LoginFooter from './loginfooter';
 
 const AuthenticatePage = () => {
 
@@ -16,7 +17,7 @@ const AuthenticatePage = () => {
 
     useEffect(() => {
         handleSwitchReset()
-    }, [])
+    })
 
     const handleSwitchReset = () => {
         dispatch(selectUserType(false))
@@ -24,8 +25,8 @@ const AuthenticatePage = () => {
     }
 
     return (
-        <div className={`${styles.main} flex items-center justify-center`}>
-            <div className='rounded-xl border-2 md:w-8/12 w-10/12 md:p-10 p-2 lg:w-[510px]'>
+        <div className={`${styles.main} flex flex-col items-center justify-center py-10`}>
+            <div className='rounded-xl border-2 md:w-8/12 w-10/12 md:p-10 p-2 lg:w-[510px] my-10'>
                 <div className='md:px-5 px-2 my-5'>
 
                     <h3 className='mb-5 text-xl text-center font-semibold md:text-2xl'>Login to ProExchange</h3>
@@ -63,6 +64,8 @@ const AuthenticatePage = () => {
 
                 </div>
             </div>
+
+            <LoginFooter />
         </div >
     )
 }
